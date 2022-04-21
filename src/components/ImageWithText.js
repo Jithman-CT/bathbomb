@@ -19,7 +19,7 @@ const ImageWithText = ({ button, reverse, image, heading, text }) => {
                         {text && text}
                     </Text>
                     {button ?
-                        <Button w="10rem" backgroundColor="#FF38BD" color="white" _hover={{ opacity: '70%' }} >Buy Now</Button> : null
+                        <Button w="10rem" backgroundColor="#FF38BD" color="#020101" _hover={{ opacity: '70%' }} >Buy Now</Button> : null
                     }
                 </Box>
             </Flex>

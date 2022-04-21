@@ -9,7 +9,7 @@ const Hero = () => {
                 Introducing Bath Bombs
             </Text>
             <Center>
-                <Button w="10rem" backgroundColor="#FF38BD" color="white" _hover={{ opacity: '70%' }} position="absolute" bottom="10%">
+                <Button w="10rem" backgroundColor="#FF38BD" color="#020101" _hover={{ opacity: '70%' }} position="absolute" bottom="10%">
                     Shop Now
                 </Button>
             </Center >
