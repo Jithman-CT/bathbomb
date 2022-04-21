@@ -25,6 +25,3 @@ img {
   object-fit: cover;
   object-position: center center;
 }
-img:hover {
-  transition: transform var(--duration-long) ease;
-}
