@@ -54,14 +54,14 @@ const HomePage = () => {
                 text="I'm baby kale chips twee skateboard tattooed, DIY iPhone ugh mixtape tumeric unicorn narwhal. Iceland shoreditch authentic, sartorial vegan twee flannel banh mi bushwick retro farm-to-table single-origin coffee. " />
 
             <Box marginTop='25px' textAlign='center'>
-                <Heading as='h6' size='sm' marginBottom='15px'>This section is what I am trying out by myself, To fetch all the collections from Shopify. But I am not able to Fetch products from the Gold & Diamond Jewellery collection</Heading>
+                <Heading as='h2' size='sm' marginBottom='15px'>This section is what I am trying out by myself, To fetch all the collections from Shopify. But I am not able to Fetch products from the Gold & Diamond Jewellery collection</Heading>
                 {collections.map((collection) => {
                     return (
                         <Link to={`/collections/${collection.handle}`} key={collection.id} >
                             <Box border='1px solid red' marginBottom="50px">
-                                <h1 >
+                                <h3>
                                     {collection.title}
-                                </h1>
+                                </h3>
                             </Box>
                         </Link>
 

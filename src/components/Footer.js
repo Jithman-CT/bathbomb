@@ -21,7 +21,7 @@ const Footer = () => {
                 </VStack>
             </Grid>
             <Box>
-                <Text textAlign="center" color="white" w="100%" borderTop="1px solid white" p="1rem">
+                <Text textAlign="center" color="#402a00" w="100%" borderTop="1px solid white" p="1rem">
                     © Copyright www.workingwithshopify.com
                 </Text>
             </Box>
