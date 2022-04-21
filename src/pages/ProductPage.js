@@ -20,7 +20,7 @@ const ProductPage = () => {
         <Box p='1.25rem'>
 
             <Grid templateColumns={['repeat(1,1fr)', 'repeat(1,1fr)', 'repeat(2,1fr)']} gap='1.5rem' alignItems='center'>
-                <Image src={product.images[0].src} loading='lazy' alt='' />
+                <Image src={product.images[0].src} loading='lazy' alt='' w={["480px", "100%"]} h={['250px', 'auto']} />
                 <Flex alignItems='center' flexDirection='column' justifyContent='center' px='1.5rem' textAlign='center' >
                     <Heading pb="1rem">{product.title}</Heading>
                     <Text fontWeight='bold' pb="1rem">$ {product.variants[0].price}</Text>

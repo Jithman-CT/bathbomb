@@ -32,7 +32,7 @@ const HomePage = () => {
                     <Link to={`/products/${product.handle}`} key={product.id} >
                         <Box _hover={{ opacity: '80%' }} textAlign="center" position="relative">
                             <Image
-                                src={product.images[0].src} loading='lazy' alt=''
+                                src={product.images[0].src} loading='lazy' alt='' w={["480px", "100%"]} h={['250px', 'auto']} className='product-image'
                             />
                             <Text fontWeight="bold" position="absolute" bottom="15%" w="100%">{product.title}</Text>
                             <Text color="gray.500" position="absolute" bottom="5%" w="100%">${product.variants[0].price}</Text>
@@ -45,13 +45,13 @@ const HomePage = () => {
                 button
                 image="https://cdn.shopify.com/s/files/1/0472/5705/9496/files/premium-bath-bombs.jpg?v=1610066758"
                 heading="Heading"
-                text="I'm baby kale chips twee skateboard tattooed, DIY iPhone ugh mixtape tumeric unicorn narwhal. Iceland shoreditch authentic, sartorial vegan twee flannel banh mi bushwick retro farm-to-table single-origin coffee. " loading='lazy' alt='' />
+                text="I'm baby kale chips twee skateboard tattooed, DIY iPhone ugh mixtape tumeric unicorn narwhal. Iceland shoreditch authentic, sartorial vegan twee flannel banh mi bushwick retro farm-to-table single-origin coffee. " />
             <ImageWithText
                 reverse
                 button
                 image="https://cdn.shopify.com/s/files/1/0472/5705/9496/files/bath-bomb-and-candle.jpg?v=1610066758"
                 heading="Second Heading"
-                text="I'm baby kale chips twee skateboard tattooed, DIY iPhone ugh mixtape tumeric unicorn narwhal. Iceland shoreditch authentic, sartorial vegan twee flannel banh mi bushwick retro farm-to-table single-origin coffee. " loading='lazy' alt='' />
+                text="I'm baby kale chips twee skateboard tattooed, DIY iPhone ugh mixtape tumeric unicorn narwhal. Iceland shoreditch authentic, sartorial vegan twee flannel banh mi bushwick retro farm-to-table single-origin coffee. " />
 
             <Box marginTop='25px' textAlign='center'>
                 <Heading as='h6' size='sm' marginBottom='15px'>This section is what I am trying out by myself, To fetch all the collections from Shopify. But I am not able to Fetch products from the Gold & Diamond Jewellery collection</Heading>

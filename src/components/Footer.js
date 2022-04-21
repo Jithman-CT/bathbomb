@@ -8,7 +8,7 @@ const Footer = () => {
     return (
         <Box backgroundColor="#FFA8E2">
             <Grid templateColumns={["repeat(1, 1fr)", "repeat(3, 1fr)"]} color="white" fontWeight='bold'>
-                <Image src="https://cdn.shopify.com/s/files/1/0472/5705/9496/files/Bath_Bomb_-_Product-5_-_trans_1.png?v=1610123549" loading='lazy' alt='' />
+                <Image src="https://cdn.shopify.com/s/files/1/0472/5705/9496/files/Bath_Bomb_-_Product-5_-_trans_1.png?v=1610123549" loading='lazy' alt='' w={["320px", "100%"]} h={['200px', 'auto']} margin='0 auto' />
                 <VStack p="2rem">
                     <Link to='/products/green-blast'>The Green Blast</Link>
                     <Link to="/products/blue-berry">The Blue Berry</Link>

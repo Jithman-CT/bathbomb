@@ -10,7 +10,7 @@ const ImageWithText = ({ button, reverse, image, heading, text }) => {
         <Box>
 
             <Flex flexDir={['column', reverseSection]} w="100%">
-                <Image objectFit="cover" w={["100%", "50%"]} src={image} loading='lazy' alt='' />
+                <Image objectFit="cover" w={["480px", "50%"]} src={image} loading='lazy' alt='' h={["250px", "auto"]} />
                 <Box w={["100%", "50%"]} display="flex" flexDir="column" justifyContent="center" alignItems="center" p="2rem">
                     <Heading pb="2rem">
                         {heading && heading}
