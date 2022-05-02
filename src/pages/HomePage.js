@@ -60,7 +60,7 @@ const HomePage = () => {
                         <Link to={`/collections/${collection.handle}`} key={collection.id} >
                             <Box border='1px solid red' marginBottom="50px">
                                 <h3>
-                                    {collection.title}
+                                    {collection.title === 'Home page' ? 'Home Collection' : collection.title}
                                 </h3>
                             </Box>
                         </Link>

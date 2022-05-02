@@ -1,6 +1,7 @@
 import React, { useEffect, useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import { Box, Grid, Image, Text, Button, Heading, Flex, } from "@chakra-ui/react"
+import ProductListing from '../components/ProductListing';
 
 import { ShopContext } from '../context/shopContext'
 
@@ -18,8 +19,7 @@ const ProductPage = () => {
 
     return (
         <Box p='1.25rem'>
-
-            <Grid templateColumns={['repeat(1,1fr)', 'repeat(1,1fr)', 'repeat(2,1fr)']} gap='1.5rem' alignItems='center'>
+            <Grid templateColumns={['repeat(1,1fr)', 'repeat(1,1fr)', 'repeat(2,1fr)']} gap='1.5rem' alignItems='center' marginBottom="2.5em">
                 <Image src={product.images[0].src} loading='lazy' alt='' w={["480px", "100%"]} h={['250px', 'auto']} />
                 <Flex alignItems='center' flexDirection='column' justifyContent='center' px='1.5rem' textAlign='center' >
                     <Heading pb="1rem">{product.title}</Heading>
@@ -33,6 +33,7 @@ const ProductPage = () => {
                     >Add To Cart</Button>
                 </Flex>
             </Grid>
+            <ProductListing productID={product.variants[0].id} />
         </Box>
 
     )

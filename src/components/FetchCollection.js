@@ -29,6 +29,7 @@ const FetchCollection = () => {
     //     fetchCustomCollection();
     // }, [fetchCustomCollection])
 
+
     if (!collections) return <div>Loading...</div>
 
     return (
@@ -42,14 +43,14 @@ const FetchCollection = () => {
                                     {collection.title}
                                 </h1>
                                 {/* {collection.products.map((product) => {
-                                return (
-                                    <div key={product.id}>
-                                        <h2>{product.title}</h2>
-                                        <p>{product.description}</p>
-                                        <Image src={product.images[0].src} alt={product.images[0].alt} loading='lazy'/>
-                                    </div>
-                                )
-                            })} */}
+                                    return (
+                                        <div key={product.id}>
+                                            <h2>{product.title}</h2>
+                                            <p>{product.description}</p>
+                                            <Image src={product.images[0].src} alt={product.images[0].alt} loading='lazy' />
+                                        </div>
+                                    )
+                                })} */}
                             </Box>
                         </Link>
 
